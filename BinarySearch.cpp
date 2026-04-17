@@ -38,7 +38,7 @@ void bubbleSortArray()
     int pass = 1;
     do
     {
-        for (int j = 0; j < nPanjang - 1; j++)
+        for (int j = 0; j <= nPanjang - 1 - pass; j++)
         {
             if (element[j] > element[j + 1])
             {
@@ -48,7 +48,7 @@ void bubbleSortArray()
             }
         }
         pass++;
-    } while (pass < nPanjang);
+    } while (pass <= nPanjang - 1);
 }
 
 void display()
